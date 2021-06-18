@@ -1,5 +1,5 @@
 FROM python:3.6
-mkdir /new_chatapp
+RUN mkdir /new_chatapp
 COPY . /new_chatapp
 COPY /new_chatapp/requirements.txt /new_chatapp/requirements.txt
 
