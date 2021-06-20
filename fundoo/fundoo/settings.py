@@ -97,15 +97,16 @@ CHANNEL_LAYERS = {
 }
 
 
+
 # Database
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mytest',
-        'USER': 'admin',
-        'PASSWORD': 'khan1234',
-        'HOST': 'terraform-20210602031040576400000001.cbrfa0gbtfxr.us-east-1.rds.amazonaws.com',
+        'NAME': 'mydb',
+        'USER': 'root',
+        'PASSWORD':'root',
+        'HOST': 'database_container',
         'PORT': '3306',
     }
 }
