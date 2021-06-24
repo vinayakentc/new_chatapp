@@ -1,16 +1,6 @@
-FROM python:3.6
-RUN mkdir /new_chatapp
-COPY . /new_chatapp
+FROM baseimg_1
 
 
-LABEL "python.backend"="Backend"
-
-
-WORKDIR /new_chatapp
-RUN   pip3 install -r requirements.txt
-RUN pip3 install mysqlclient
-
-RUN pip3 install pymysql
 EXPOSE 8000
 WORKDIR /new_chatapp/fundoo/
 
