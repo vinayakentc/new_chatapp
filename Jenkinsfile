@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-	stage('SCM Checkout'){
+	stage('git clone'){
 	    steps{
 	        git 'https://github.com/vinayakentc/new_chatapp.git'
 	    }
