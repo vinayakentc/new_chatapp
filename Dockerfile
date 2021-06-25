@@ -1,4 +1,4 @@
-ROM python:3.6
+FROM python:3.6
 RUN mkdir /new_chatapp
 COPY . /new_chatapp
 
