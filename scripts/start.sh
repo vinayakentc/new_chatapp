@@ -4,6 +4,13 @@ cd /home/ubuntu/Backend/new_chatapp/
 
 docker build -t backendimg_1 .
 
+cd ~
+
+cd Database/
+
+docker build -t  databaseimg_2 .
+
+
 docker login 
 
 
