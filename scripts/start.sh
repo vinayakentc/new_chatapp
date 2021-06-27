@@ -4,7 +4,7 @@ cd /home/ubuntu/Backend/new_chatapp/
 
 docker build -t backendimg_1 .
 
-docker run -v mysqlvol2:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=ganesh123 --name mysqldb -d databaseimg_2 
+docker run -v mysqlvol2:/var/lib/mysql --name mysqldb -d databaseimg_2 
 
 docker run --name backend --link mysqldb -d backendimg_1 
 
